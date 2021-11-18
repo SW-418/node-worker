@@ -1,0 +1,30 @@
+{
+  "name": "node-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SW-418/node-worker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SW-418/node-worker/issues"
+  },
+  "homepage": "https://github.com/SW-418/node-worker#readme",
+  "dependencies": {
+    "@types/node": "^16.11.7",
+    "http": "0.0.1-security",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0"
+  }
+}
