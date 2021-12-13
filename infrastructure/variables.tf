@@ -13,6 +13,10 @@ variable "feature_name" {
   default = "node-worker"
 }
 
+variable "terraform-org" {
+  type = string
+}
+
 variable "gcp_project_id" {
   type = string
 }

@@ -1,4 +1,15 @@
 terraform {
+
+  backend "remote" {
+    # The name of your Terraform Cloud organization.
+    organization = var.terraform_org
+
+    # The name of the Terraform Cloud workspace to store Terraform state files in.
+    workspaces {
+      name = var.feature_name
+    }
+  }
+
   required_providers {
     google = {
       source = "hashicorp/google"
