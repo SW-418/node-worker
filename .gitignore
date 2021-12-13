@@ -35,3 +35,7 @@ terraform.rc
 
 dist
 node_modules
+.DS_STORE
+dist.zip
+node-worker-gcp-config.json
+**.tfvars.**

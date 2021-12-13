@@ -2,10 +2,10 @@
   "name": "node-worker",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/app.js",
+  "main": "dist/function.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/app.js"
+    "start": "tsc && node dist/function.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/SW-418/node-worker#readme",
   "dependencies": {
     "@types/node": "^16.11.7",
-    "http": "0.0.1-security",
     "typescript": "^4.5.2"
   },
   "devDependencies": {
