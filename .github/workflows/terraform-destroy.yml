@@ -27,9 +27,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Terraform Init
-      run: terraform init
-      with:
-          args: '-var="gcp_project_id=${{ gcp_project_id }} terraform_org=${{ terraform_org }}"'
+      run: terraform init -var gcp_project_id=${{ gcp_project_id }} terraform_org=${{ terraform_org }}
 
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
