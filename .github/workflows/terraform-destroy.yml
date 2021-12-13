@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  terraform:
+  Teardown:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
