@@ -8,6 +8,9 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
+    env:
+      gcp_project_id: ${{ secrets.gcp_project_id }}
+      terraform_org: ${{ secrets.terraform_org }}
 
     defaults:
       run:
