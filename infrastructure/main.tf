@@ -1,12 +1,12 @@
 terraform {
 
-  backend "remote" {
-    organization = "sw-418" // Rename this
+  # backend "remote" {
+  #   organization = "sw-418" // Rename this
 
-    workspaces {
-      name = "node-worker"
-    }
-  }
+  #   workspaces {
+  #     name = "node-worker"
+  #   }
+  # }
 
   required_providers {
     google = {
