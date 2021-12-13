@@ -27,4 +27,4 @@ jobs:
       run: terraform init
 
     - name: Terraform Destroy
-      run: terraform destroy -auto-approve -var gcp_project_id=${{ secrets.gcp_project_id }} -var terraform_org=${{ secrets.terraform_org }}
+      run: terraform destroy -auto-approve
