@@ -31,3 +31,5 @@ jobs:
 
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
+      with:
+          args: '-var="gcp_project_id=${{ gcp_project_id }} terraform_org=${{ terraform_org }}"'
