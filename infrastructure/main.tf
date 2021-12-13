@@ -10,7 +10,7 @@ terraform {
 
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "3.5.0"
     }
   }
@@ -18,13 +18,13 @@ terraform {
 
 provider "google" {
   credentials = file("node-worker-gcp-config.json") // Extract and store
-  project = "${var.feature_name}-${var.gcp_project_id}"
-  region  = var.gcp_region
-  zone    = var.gcp_zone
+  project     = "${var.feature_name}-${var.gcp_project_id}"
+  region      = var.gcp_region
+  zone        = var.gcp_zone
 }
 
 resource "google_storage_bucket" "node-worker-bucket" {
-  name = var.feature_name
+  name     = var.feature_name
   location = var.gcp_region
 
   labels = {
@@ -36,7 +36,7 @@ data "archive_file" "code" {
   type        = "zip"
   output_path = "${path.module}/dist.zip"
   source {
-    content  = "${file("../dist/function.js")}"
+    content  = file("../dist/function.js")
     filename = "function.js"
   }
 }
