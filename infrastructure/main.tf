@@ -1,13 +1,4 @@
 terraform {
-
-  backend "remote" {
-    organization = "sw-418" // Rename this
-
-    workspaces {
-      name = "node-worker"
-    }
-  }
-
   required_providers {
     google = {
       source  = "hashicorp/google"
